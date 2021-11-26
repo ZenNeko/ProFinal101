@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aZtd4sSkFlwz7BWqq0ICzAuA48CK0Up6XA1fT7e3kxzxZihN0wDS16rUFihRrdM63B+VsNhHQX+3R+swihBNRQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\choro\\Desktop\\final\\ProFinal1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\choro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
