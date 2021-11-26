@@ -15,10 +15,8 @@ namespace ConsoleApp1
             int AT5 = 0;
             char[] inAT = new char[6];
             bool[] cAT = { false, false, false, false, false, false};
+
             
-
-
-
 
 
             int[] CardPlay = new int[6];
@@ -32,7 +30,7 @@ namespace ConsoleApp1
             shipb.Showcard();
             Console.Write("input ship : ");
             
-            int[] CardPlanet = { 1, 1, 6, 6, 1, 1 };
+            int[] CardPlanet = new int[6];
             Planetclass PlanetA = new Planetclass("Planet-06", CardPlanet);
 
             
@@ -55,12 +53,12 @@ namespace ConsoleApp1
                 }
             }
 
-            Console.WriteLine($"a = {CardPlay[0]}| T1 = ?");
-            Console.WriteLine($"b = {CardPlay[1]}| T2 = ?");
-            Console.WriteLine($"c = {CardPlay[2]}| T3 = ?");
-            Console.WriteLine($"d = {CardPlay[3]}| T4 = ?");
-            Console.WriteLine($"e = {CardPlay[4]}| T5 = ?");
-            Console.WriteLine($"f = {CardPlay[5]}| T6 = ?");
+            Console.WriteLine($"a = {CardPlay[0]}| T0 = ?");
+            Console.WriteLine($"b = {CardPlay[1]}| T1 = ?");
+            Console.WriteLine($"c = {CardPlay[2]}| T2 = ?");
+            Console.WriteLine($"d = {CardPlay[3]}| T3 = ?");
+            Console.WriteLine($"e = {CardPlay[4]}| T4 = ?");
+            Console.WriteLine($"f = {CardPlay[5]}| T5 = ?");
             Console.Write("input T cheack : ");
             PlanetA.Cheackcard();
 
@@ -293,7 +291,7 @@ namespace ConsoleApp1
                 }
                 else { cAT[4] = true; }
             }
-            //set AT5 
+            //set AT5 done
             while (cAT[5] != true)
             {
                 Console.Write("input AT5 ");
@@ -343,8 +341,8 @@ namespace ConsoleApp1
 
 
             // Win | lose
-            int x = 0,y=0;
-            if (CardPlay[AT0] > CardPlanet[0])
+            int  x = 0,y=0;
+            if (CardPlay[AT0] > PlanetA.Cardp[0])
             {
                 x = x+1;
             }
@@ -352,7 +350,7 @@ namespace ConsoleApp1
             {
                 y = y+1;
             }
-            if (CardPlay[AT1] > CardPlanet[1])
+            if (CardPlay[AT1] > PlanetA.Cardp[1])
             {
                 x = x + 1;   
             }
@@ -360,7 +358,7 @@ namespace ConsoleApp1
             {
                 y = y + 1;
             }
-            if (CardPlay[AT2] > CardPlanet[2])
+            if (CardPlay[AT2] > PlanetA.Cardp[2])
             {
                 x = x + 1; 
             }
@@ -368,7 +366,7 @@ namespace ConsoleApp1
             {
                 y = y + 1;
             }
-            if (CardPlay[AT3] > CardPlanet[3])
+            if (CardPlay[AT3] > PlanetA.Cardp[3])
             {
                 x = x + 1;
             }
@@ -376,7 +374,7 @@ namespace ConsoleApp1
             {
                 y = y + 1;
             }
-            if (CardPlay[AT4] > CardPlanet[4])
+            if (CardPlay[AT4] > PlanetA.Cardp[4])
             {
                 x = x + 1;
             }
@@ -384,7 +382,7 @@ namespace ConsoleApp1
             {
                 y = y + 1;
             }
-            if(CardPlay[AT5] > CardPlanet[5])
+            if(CardPlay[AT5] > PlanetA.Cardp[5])
             {
                 x = x + 1;
             }
