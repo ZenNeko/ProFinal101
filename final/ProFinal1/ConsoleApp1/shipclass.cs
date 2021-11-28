@@ -9,7 +9,7 @@ namespace ConsoleApp1
     public class Ship : Baseclass
     {
 
-        public Ship(string name, int[] card1) : base(name, card1)
+        public Ship(string nameS, int[] card1) : base(nameS, card1)
         {
             
         }

@@ -19,7 +19,7 @@ namespace ConsoleApp1
 
         public virtual void Showcard()
         {
-            Console.WriteLine($"-{Name}-{Card[0]},{Card[1]},{Card[2]},{Card[3]},{Card[4]},{Card[5]}");
+            Console.Write($"| {Name} ► {Card[0]},{Card[1]},{Card[2]},{Card[3]},{Card[4]},{Card[5]}");
         }
     }
 }

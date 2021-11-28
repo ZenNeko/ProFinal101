@@ -14,3 +14,35 @@ C:\Users\choro\Desktop\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.
 C:\Users\choro\Desktop\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ref\ConsoleApp1.dll
 C:\Users\choro\Desktop\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.pdb
 C:\Users\choro\Desktop\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.genruntimeconfig.cache
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.exe
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.deps.json
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.runtimeconfig.json
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.runtimeconfig.dev.json
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.dll
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ref\ConsoleApp1.dll
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.pdb
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.AssemblyReference.cache
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfo.cs
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.dll
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ref\ConsoleApp1.dll
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.pdb
+D:\BU\GI161\Final GI\last Final\final\final\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.genruntimeconfig.cache
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.exe
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.deps.json
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.runtimeconfig.json
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.runtimeconfig.dev.json
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.dll
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ref\ConsoleApp1.dll
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.pdb
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.dll
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ref\ConsoleApp1.dll
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.pdb
+C:\Users\choro\Downloads\ProFinal1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.genruntimeconfig.cache
