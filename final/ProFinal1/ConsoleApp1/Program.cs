@@ -6,8 +6,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("| ►►►► Welcome to my game. ◄◄◄◄◄");
+            Console.WriteLine(" ______________________________________________ ");
+            Console.WriteLine("|       ►►►► Welcome to my game. ◄◄◄◄◄         |");
             //strat loop
+            string Line = "|==============================================|";
+            string wrot = "|?!!!!!!!!!!! your in put are wrot !!!!!!!!!!!?|";
             bool loop = false;
             while (loop == false)
             {
@@ -67,19 +70,19 @@ namespace ConsoleApp1
                 //ship A
                 Ship shipa = new Ship("ShipA", Carda);
                 shipa.Showcard();
-                Console.WriteLine($" | Sum ship A = {sumA} ");
+                Console.WriteLine($" | Sum ship A = {sumA}        |");
                 //ship B
                 Ship shipb = new Ship("ShipB", Cardb);
                 shipb.Showcard();
-                Console.WriteLine($" | Sum ship b = {sumb} ");
+                Console.WriteLine($" | Sum ship b = {sumb}        |");
                 //ship c
                 Ship shipc = new Ship("Shipc", Cardc);
                 shipc.Showcard();
-                Console.WriteLine($" | Sum ship C = {sumC} ");
+                Console.WriteLine($" | Sum ship C = {sumC}        |");
                 // Get input for choose ship
-                Console.WriteLine("|=============================================");
-                Console.WriteLine("| ► Type 'A' or 'B' or 'C' for choose The ship");
-                Console.Write("| Choose Your ship ► ");
+                Console.WriteLine(Line);
+                Console.WriteLine("| ► Type 'A' or 'B' or 'C' for choose The ship |");
+                
 
                 int[] CardPlanet = new int[6];
                 Planetclass PlanetA = new Planetclass("Planet-06", CardPlanet);
@@ -87,7 +90,7 @@ namespace ConsoleApp1
                 
                 while (CardPlay != Carda && CardPlay != Cardb)
                 {
-
+                    Console.Write("| Choose Your ship ► ");
                     char.TryParse(Console.ReadLine(), out inAT[0]);
 
                     if (inAT[0] == 'a' || inAT[0] == 'A')
@@ -104,27 +107,27 @@ namespace ConsoleApp1
                     }
                     else
                     {
-                        Console.WriteLine("your in put are wrot");
+                        Console.WriteLine(wrot);
                     }
                 }
-                Console.WriteLine("|=============================================");
-                Console.WriteLine($"| Card'a' = {CardPlay[0]}| T0 = ?");
-                Console.WriteLine($"| Card'b' = {CardPlay[1]}| T1 = ?");
-                Console.WriteLine($"| Card'c' = {CardPlay[2]}| T2 = ?");
-                Console.WriteLine($"| Card'd' = {CardPlay[3]}| T3 = ?");
-                Console.WriteLine($"| Card'e' = {CardPlay[4]}| T4 = ?");
-                Console.WriteLine($"| Card'f' = {CardPlay[5]}| T5 = ?");
-                Console.WriteLine("|=============================================");
-                Console.WriteLine($"| Enter T0 - T5 to 1st CheackCard");
+                Console.WriteLine(Line);
+                Console.WriteLine($"| Card'a' = {CardPlay[0]}| T0 = ?                          |");
+                Console.WriteLine($"| Card'b' = {CardPlay[1]}| T1 = ?                          |");
+                Console.WriteLine($"| Card'c' = {CardPlay[2]}| T2 = ?                          |");
+                Console.WriteLine($"| Card'd' = {CardPlay[3]}| T3 = ?                          |");
+                Console.WriteLine($"| Card'e' = {CardPlay[4]}| T4 = ?                          |");
+                Console.WriteLine($"| Card'f' = {CardPlay[5]}| T5 = ?                          |");
+                Console.WriteLine(Line);
+                Console.WriteLine($"| Enter T0 - T5 to 1st CheackCard              |");
                 Console.Write($"| Cheack {PlanetA.nameP}'s Card : ");
                 PlanetA.Cheackcard();
                 
 
                 //set AT0 done
-                Console.WriteLine("|=============================================");
+                Console.WriteLine(Line);
                 while (cAT[0] != true)
                 {
-                    Console.Write("Pick a card to Attack T0 : ");
+                    Console.Write("| Pick a card to Attack T0 : ");
                     char.TryParse(Console.ReadLine(), out inAT[0]);
 
                     if (inAT[0] == 'a' || inAT[0] == 'A')
@@ -159,14 +162,14 @@ namespace ConsoleApp1
                     }
                     else
                     {
-                        Console.WriteLine("your in put are wrot");
+                        Console.WriteLine(wrot);
                     }
                 }
                 //set AT1 done
-                Console.WriteLine("|=============================================");
+                Console.WriteLine(Line);
                 while (cAT[1] != true)
                 {
-                    Console.Write("Pick a card to Attack T1 : ");
+                    Console.Write("| Pick a card to Attack T1 : ");
 
                     char.TryParse(Console.ReadLine(), out inAT[1]);
                     if (inAT[1] == 'a' || inAT[1] == 'A')
@@ -231,15 +234,15 @@ namespace ConsoleApp1
                     }
                     else 
                     {
-                        Console.WriteLine("your in put are wrot");
+                        Console.WriteLine(wrot);
                     }
                     
                 }
                 //set AT2 done
-                Console.WriteLine("|=============================================");
+                Console.WriteLine(Line);
                 while (cAT[2] != true)
                 {
-                    Console.Write("Pick a card to Attack T2 : ");
+                    Console.Write("| Pick a card to Attack T2 : ");
 
                     char.TryParse(Console.ReadLine(), out inAT[2]);
                     if (inAT[2] == 'a' || inAT[2] == 'A')
@@ -304,15 +307,15 @@ namespace ConsoleApp1
                     }
                     else
                     {
-                        Console.WriteLine("your in put are wrot");
+                        Console.WriteLine(wrot);
                     }
                     
                 }
                 //set AT3 done
-                Console.WriteLine("|=============================================");
+                Console.WriteLine(Line);
                 while (cAT[3] != true)
                 {
-                    Console.Write("Pick a card to Attack T3 : ");
+                    Console.Write("| Pick a card to Attack T3 : ");
 
                     char.TryParse(Console.ReadLine(), out inAT[3]);
                     if (inAT[3] == 'a' || inAT[3] == 'A')
@@ -377,15 +380,15 @@ namespace ConsoleApp1
                     }
                     else
                     {
-                        Console.WriteLine("your in put are wrot");
+                        Console.WriteLine(wrot);
                     }
                     
                 }
                 //set AT4 done
-                Console.WriteLine("|=============================================");
+                Console.WriteLine(Line);
                 while (cAT[4] != true)
                 {
-                    Console.Write("Pick a card to Attack T4 : ");
+                    Console.Write("| Pick a card to Attack T4 : ");
 
                     char.TryParse(Console.ReadLine(), out inAT[4]);
                     if (inAT[4] == 'a' || inAT[4] == 'A')
@@ -450,7 +453,7 @@ namespace ConsoleApp1
                     }
                     else
                     {
-                        Console.WriteLine("your in put are wrot");
+                        Console.WriteLine(wrot);
                     }
                     if (AT0 == AT4 || AT1 == AT4 || AT4 == AT2 || AT4 == AT3)
                     {
@@ -460,10 +463,10 @@ namespace ConsoleApp1
                     else { cAT[4] = true; }
                 }
                 //set AT5 done
-                Console.WriteLine("|=============================================");
+                Console.WriteLine(Line);
                 while (cAT[5] != true)
                 {
-                    Console.Write("Pick a card to Attack T5 : ");
+                    Console.Write("| Pick a card to Attack T5 : ");
 
                     char.TryParse(Console.ReadLine(), out inAT[5]);
                     if (inAT[5] == 'a' || inAT[5] == 'A')
@@ -528,7 +531,7 @@ namespace ConsoleApp1
                     }
                     else
                     {
-                        Console.WriteLine("your in put are wrot");
+                        Console.WriteLine(wrot);
                     }
                     
                 }
@@ -585,11 +588,14 @@ namespace ConsoleApp1
                     {
                         y = y + 1;
                     }
-                    Console.WriteLine($"Win = {x} | Lose = {y}");
+                    Console.WriteLine(Line);
                     PlanetA.Showcard();
+                    Console.WriteLine("                      |");
+                    Console.WriteLine($"|►►►►►►►►►►►►►►Win = {x} | Lose = {y}►►►►►►►►►►►►►►|");
+                    Console.WriteLine(Line);
                 }
                 //loop game
-                Console.Write("\nDo you want to play again [Y]Yes ro [N]No : ");
+                Console.Write("| Do you want to play again [Y]Yes ro [N]No : ");
                 bool YN = false;
                 while (YN !=true)
                 {
@@ -597,26 +603,25 @@ namespace ConsoleApp1
 
                     if (ans == "N" || ans == "n")
                     {
-                        Console.WriteLine("|=============================================");
-                        Console.WriteLine("|sssss EEEEE EEEEE  Y   Y   A     A  ");
-                        Console.WriteLine("|s     E     E      Y   Y  A A   A A ");
-                        Console.WriteLine("|sssss EEEEE EEEEE   Y Y  AAAAA AAAAA");
-                        Console.WriteLine("|    s E     E        Y   A   A A   A");
-                        Console.WriteLine("|sssss EEEEE EEEEE    Y   A   A A   A");
-                        Console.WriteLine("|=============================================");
+                        Console.WriteLine(Line);
+                        Console.WriteLine("|     sssss EEEEE EEEEE  Y   Y   A     A       |");
+                        Console.WriteLine("|     s     E     E      Y   Y  A A   A A      |");
+                        Console.WriteLine("|     sssss EEEEE EEEEE   Y Y  AAAAA AAAAA     |");
+                        Console.WriteLine("|         s E     E        Y   A   A A   A     |");
+                        Console.WriteLine("|     sssss EEEEE EEEEE    Y   A   A A   A     |");
+                        Console.WriteLine(Line);
                         loop = true;
                         YN = true;
-
-
                     }
                     else if (ans == "Y" || ans == "y")
                     {
                         Console.Clear();
                         YN = true;
                     }
-                    else { Console.WriteLine(" your inpor are wort "); }
+                    else { Console.WriteLine(wrot); }
                 }
-                
+                Console.WriteLine(" ______________________________________________ ");
+
             }
         }
     }
