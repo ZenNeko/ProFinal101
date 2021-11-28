@@ -18,7 +18,7 @@ namespace ConsoleApp1
         public virtual void Cheackcard()
 
         {
-            string At = Console.ReadLine();
+            
             int Rnum, x, i, SumCardp=0;
             Random random = new Random();
             bool cardcheack = false;
@@ -35,48 +35,96 @@ namespace ConsoleApp1
                 }
                 SumCardp = Cardp[0] + Cardp[1] + Cardp[2] + Cardp[3] + Cardp[4] + Cardp[5];
             }
-            
 
+            string At = Console.ReadLine();
             while (cardcheack != true)
             {
-                if (At == "T0"|| At == "t0")
+                if (At == "T0" || At == "t0")
                 {
-                    Console.Write($"| {At}={Cardp[0]}");
+                    Console.Write($"| {nameP} {At}={Cardp[0]}");
                     cardcheack = true;
                 }
                 else if (At == "T1" || At == "t1")
                 {
-                    Console.Write($"| {At}={Cardp[1]}");
+                    Console.Write($"| {nameP} {At}={Cardp[1]}");
                     cardcheack = true;
                 }
                 else if (At == "T2" || At == "t2")
                 {
-                    Console.Write($"| {At}={Cardp[2]}");
+                    Console.Write($"| {nameP} {At}={Cardp[2]}");
                     cardcheack = true;
                 }
                 else if (At == "T3" || At == "t3")
                 {
-                    Console.Write($"| {At}={Cardp[3]}");
+                    Console.Write($"| {nameP} {At}={Cardp[3]}");
                     cardcheack = true;
                 }
                 else if (At == "T4" || At == "t4")
                 {
-                    Console.Write($"| {At}={Cardp[4]}");
+                    Console.Write($"| {nameP} {At}={Cardp[4]}");
                     cardcheack = true;
                 }
                 else if (At == "T5" || At == "t5")
                 {
-                    Console.Write($"| {At}={Cardp[5]}");
+                    Console.Write($"| {nameP} {At}={Cardp[5]}");
                     cardcheack = true;
                 }
                 else
                 {
                     Console.WriteLine("your in put are wrot");
-                    Console.WriteLine($"Enter T0 - T5 to CheackCard");
+                    Console.WriteLine($"Enter T0 - T5 to 1st CheackCard");
                     Console.Write($"Cheack {nameP}'s Card : ");
 
                     cardcheack = false;
                     At = Console.ReadLine();
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine($"| Enter T0 - T5 to 2nd CheackCard");
+            Console.Write($"| Cheack {nameP}'s Card : ");
+            string At2 = Console.ReadLine();
+            cardcheack = false;
+            while (cardcheack != true)
+            {
+                if (At2 == "T0"|| At2 == "t0")
+                {
+                    Console.Write($"| {nameP} {At2}={Cardp[0]}");
+                    cardcheack = true;
+                }
+                else if (At2 == "T1" || At2 == "t1")
+                {
+                    Console.Write($"| {nameP} {At2}={Cardp[1]}");
+                    cardcheack = true;
+                }
+                else if (At2 == "T2" || At2 == "t2")
+                {
+                    Console.Write($"| {nameP} {At2}={Cardp[2]}");
+                    cardcheack = true;
+                }
+                else if (At2 == "T3" || At2 == "t3")
+                {
+                    Console.Write($"| {nameP} {At2}={Cardp[3]}");
+                    cardcheack = true;
+                }
+                else if (At2 == "T4" || At2 == "t4")
+                {
+                    Console.Write($"| {nameP} {At2}={Cardp[4]}");
+                    cardcheack = true;
+                }
+                else if (At2 == "T5" || At2 == "t5")
+                {
+                    Console.Write($"| {nameP} {At2}={Cardp[5]}");
+                    cardcheack = true;
+                }
+                else
+                {
+                    Console.WriteLine("your in put are wrot");
+                    Console.WriteLine($"Enter T0 - T5 to 2nd CheackCard");
+                    Console.Write($"Cheack {nameP}'s Card : ");
+
+                    cardcheack = false;
+                    At2 = Console.ReadLine();
                 }
                 
 

@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("►►►► Welcome to my game. ◄◄◄◄◄");
+            Console.WriteLine("| ►►►► Welcome to my game. ◄◄◄◄◄");
             //strat loop
             bool loop = false;
             while (loop == false)
@@ -17,11 +17,11 @@ namespace ConsoleApp1
                 int AT3 = 0;
                 int AT4 = 0;
                 int AT5 = 0;
-                int Rnum, SumCarda = 0, SumCardb = 0;
+                int Rnum, SumCarda = 0, SumCardb = 0, SumCardc = 0;
                 Random random = new Random();
                 char[] inAT = new char[6];
                 bool[] cAT = { false, false, false, false, false, false };
-                int[] Carda = new int[6], Cardb = new int[6], CardPlay = new int[6]; ;
+                int[] Carda = new int[6], Cardb = new int[6], CardPlay = new int[6], Cardc = new int[6]; 
                 //random cards Ship A
                 int sumA = random.Next(18, 23);
                 while (sumA != SumCarda)
@@ -48,23 +48,43 @@ namespace ConsoleApp1
                     }
                     SumCardb = Cardb[0] + Cardb[1] + Cardb[2] + Cardb[3] + Cardb[4] + Cardb[5];
                 }
+                //random cards Ship c
+                int sumC = random.Next(19, 24);
+                while (sumC != SumCardc)
+                {
+                    for (int j = 0; j < 6; j++)
+                    {
+                        int randomNumber = random.Next(0, 8);
+                        Rnum = randomNumber;
+                        Cardc[j] = Rnum;
+
+                    }
+                    SumCardc = Cardc[0] + Cardc[1] + Cardc[2] + Cardc[3] + Cardc[4] + Cardc[5];
+                }
 
 
                 // Show ship and planet cards
+                //ship A
                 Ship shipa = new Ship("ShipA", Carda);
                 shipa.Showcard();
                 Console.WriteLine($" | Sum ship A = {sumA} ");
-
+                //ship B
                 Ship shipb = new Ship("ShipB", Cardb);
                 shipb.Showcard();
                 Console.WriteLine($" | Sum ship b = {sumb} ");
-                Console.WriteLine("| ► Type 'A' or 'B' for choose The ship");
+                //ship c
+                Ship shipc = new Ship("Shipc", Cardc);
+                shipc.Showcard();
+                Console.WriteLine($" | Sum ship C = {sumC} ");
+                // Get input for choose ship
+                Console.WriteLine("|=============================================");
+                Console.WriteLine("| ► Type 'A' or 'B' or 'C' for choose The ship");
                 Console.Write("| Choose Your ship ► ");
 
                 int[] CardPlanet = new int[6];
                 Planetclass PlanetA = new Planetclass("Planet-06", CardPlanet);
 
-                // Get input for choose ship
+                
                 while (CardPlay != Carda && CardPlay != Cardb)
                 {
 
@@ -78,26 +98,30 @@ namespace ConsoleApp1
                     {
                         CardPlay = Cardb;
                     }
+                    else if (inAT[0] == 'c' || inAT[0] == 'C')
+                    {
+                        CardPlay = Cardc;
+                    }
                     else
                     {
                         Console.WriteLine("your in put are wrot");
                     }
                 }
-
+                Console.WriteLine("|=============================================");
                 Console.WriteLine($"| Card'a' = {CardPlay[0]}| T0 = ?");
                 Console.WriteLine($"| Card'b' = {CardPlay[1]}| T1 = ?");
                 Console.WriteLine($"| Card'c' = {CardPlay[2]}| T2 = ?");
                 Console.WriteLine($"| Card'd' = {CardPlay[3]}| T3 = ?");
                 Console.WriteLine($"| Card'e' = {CardPlay[4]}| T4 = ?");
                 Console.WriteLine($"| Card'f' = {CardPlay[5]}| T5 = ?");
+                Console.WriteLine("|=============================================");
                 Console.WriteLine($"| Enter T0 - T5 to 1st CheackCard");
                 Console.Write($"| Cheack {PlanetA.nameP}'s Card : ");
                 PlanetA.Cheackcard();
-                Console.WriteLine($"| Enter T0 - T5 to 2nd CheackCard");
-                Console.Write($"| Cheack {PlanetA.nameP}'s Card : ");
-                PlanetA.Cheackcard();
+                
 
                 //set AT0 done
+                Console.WriteLine("|=============================================");
                 while (cAT[0] != true)
                 {
                     Console.Write("Pick a card to Attack T0 : ");
@@ -139,6 +163,7 @@ namespace ConsoleApp1
                     }
                 }
                 //set AT1 done
+                Console.WriteLine("|=============================================");
                 while (cAT[1] != true)
                 {
                     Console.Write("Pick a card to Attack T1 : ");
@@ -186,6 +211,7 @@ namespace ConsoleApp1
                     else { cAT[1] = true; }
                 }
                 //set AT2 done
+                Console.WriteLine("|=============================================");
                 while (cAT[2] != true)
                 {
                     Console.Write("Pick a card to Attack T2 : ");
@@ -233,6 +259,7 @@ namespace ConsoleApp1
                     else { cAT[2] = true; }
                 }
                 //set AT3 done
+                Console.WriteLine("|=============================================");
                 while (cAT[3] != true)
                 {
                     Console.Write("Pick a card to Attack T3 : ");
@@ -280,6 +307,7 @@ namespace ConsoleApp1
                     else { cAT[3] = true; }
                 }
                 //set AT4 done
+                Console.WriteLine("|=============================================");
                 while (cAT[4] != true)
                 {
                     Console.Write("Pick a card to Attack T4 : ");
@@ -327,6 +355,7 @@ namespace ConsoleApp1
                     else { cAT[4] = true; }
                 }
                 //set AT5 done
+                Console.WriteLine("|=============================================");
                 while (cAT[5] != true)
                 {
                     Console.Write("Pick a card to Attack T5 : ");
@@ -376,69 +405,88 @@ namespace ConsoleApp1
 
 
                 // Win | lose
-                int x = 0, y = 0;
-                if (CardPlay[AT0] > PlanetA.Cardp[0])
                 {
-                    x = x + 1;
+                    int x = 0, y = 0;
+                    if (CardPlay[AT0] > PlanetA.Cardp[0])
+                    {
+                        x = x + 1;
+                    }
+                    else
+                    {
+                        y = y + 1;
+                    }
+                    if (CardPlay[AT1] > PlanetA.Cardp[1])
+                    {
+                        x = x + 1;
+                    }
+                    else
+                    {
+                        y = y + 1;
+                    }
+                    if (CardPlay[AT2] > PlanetA.Cardp[2])
+                    {
+                        x = x + 1;
+                    }
+                    else
+                    {
+                        y = y + 1;
+                    }
+                    if (CardPlay[AT3] > PlanetA.Cardp[3])
+                    {
+                        x = x + 1;
+                    }
+                    else
+                    {
+                        y = y + 1;
+                    }
+                    if (CardPlay[AT4] > PlanetA.Cardp[4])
+                    {
+                        x = x + 1;
+                    }
+                    else
+                    {
+                        y = y + 1;
+                    }
+                    if (CardPlay[AT5] > PlanetA.Cardp[5])
+                    {
+                        x = x + 1;
+                    }
+                    else
+                    {
+                        y = y + 1;
+                    }
+                    Console.WriteLine($"Win = {x} | Lose = {y}");
+                    PlanetA.Showcard();
                 }
-                else
-                {
-                    y = y + 1;
-                }
-                if (CardPlay[AT1] > PlanetA.Cardp[1])
-                {
-                    x = x + 1;
-                }
-                else
-                {
-                    y = y + 1;
-                }
-                if (CardPlay[AT2] > PlanetA.Cardp[2])
-                {
-                    x = x + 1;
-                }
-                else
-                {
-                    y = y + 1;
-                }
-                if (CardPlay[AT3] > PlanetA.Cardp[3])
-                {
-                    x = x + 1;
-                }
-                else
-                {
-                    y = y + 1;
-                }
-                if (CardPlay[AT4] > PlanetA.Cardp[4])
-                {
-                    x = x + 1;
-                }
-                else
-                {
-                    y = y + 1;
-                }
-                if (CardPlay[AT5] > PlanetA.Cardp[5])
-                {
-                    x = x + 1;
-                }
-                else
-                {
-                    y = y + 1;
-                }
-                Console.WriteLine($"Win = {x} | Lose = {y}");
-                PlanetA.Showcard();
                 //loop game
                 Console.WriteLine("\nDo you want to play again [Y]Yes ro [N]No");
-                String ans = Console.ReadLine();
-                if (ans == "N")
+                bool YN = false;
+                while (YN !=true)
                 {
-                    Console.WriteLine("See ya~~~");
-                    loop = true;
+                    String ans = Console.ReadLine();
+
+                    if (ans == "N" || ans == "n")
+                    {
+                        Console.WriteLine("|=============================================");
+                        Console.WriteLine("|sssss EEEEE EEEEE  Y   Y   A     A  ");
+                        Console.WriteLine("|s     E     E      Y   Y  A A   A A ");
+                        Console.WriteLine("|sssss EEEEE EEEEE   Y Y  AAAAA AAAAA");
+                        Console.WriteLine("|    s E     E        Y   A   A A   A");
+                        Console.WriteLine("|sssss EEEEE EEEEE    Y   A   A A   A");
+                        Console.WriteLine("|=============================================");
+                        loop = true;
+                        YN = true;
+
+
+                    }
+                    else if (ans == "Y" || ans == "y")
+                    {
+                        Console.Clear();
+                        YN = true;
+                    }
+                    else { Console.WriteLine(" your inpor are wort "); }
                 }
-                else
-                {
-                    Console.Clear();
-                }
+                
             }
         }
     }
