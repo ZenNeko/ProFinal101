@@ -11,12 +11,12 @@ namespace ConsoleApp1
             bool loop = false;
             while (loop == false)
             {
-                int AT0 = 0;
-                int AT1 = 0;
-                int AT2 = 0;
-                int AT3 = 0;
-                int AT4 = 0;
-                int AT5 = 0;
+                int AT0 = 6;
+                int AT1 = 6;
+                int AT2 = 6;
+                int AT3 = 6;
+                int AT4 = 6;
+                int AT5 = 6;
                 int Rnum, SumCarda = 0, SumCardb = 0, SumCardc = 0;
                 Random random = new Random();
                 char[] inAT = new char[6];
@@ -172,43 +172,68 @@ namespace ConsoleApp1
                     if (inAT[1] == 'a' || inAT[1] == 'A')
                     {
                         AT1 = 0;
-                        cAT[1] = true;
+                        if (AT0 == AT1)
+                        {
+                            cAT[1] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[1] = true; }
                     }
                     else if (inAT[1] == 'b' || inAT[1] == 'B')
                     {
                         AT1 = 1;
-                        cAT[1] = true;
+                        if (AT0 == AT1)
+                        {
+                            cAT[1] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[1] = true; }
                     }
                     else if (inAT[1] == 'c' || inAT[1] == 'C')
                     {
                         AT1 = 2;
-                        cAT[1] = true;
+                        if (AT0 == AT1)
+                        {
+                            cAT[1] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[1] = true; }
                     }
                     else if (inAT[1] == 'd' || inAT[1] == 'D')
                     {
                         AT1 = 3;
-                        cAT[1] = true;
+                        if (AT0 == AT1)
+                        {
+                            cAT[1] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[1] = true; }
                     }
                     else if (inAT[1] == 'e' || inAT[1] == 'E')
                     {
                         AT1 = 4;
-                        cAT[1] = true;
+                        if (AT0 == AT1)
+                        {
+                            cAT[1] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[1] = true; }
                     }
                     else if (inAT[1] == 'f' || inAT[1] == 'F')
                     {
                         AT1 = 5;
-                        cAT[1] = true;
+                        if (AT0 == AT1)
+                        {
+                            cAT[1] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[1] = true; }
                     }
-                    else
+                    else 
                     {
                         Console.WriteLine("your in put are wrot");
                     }
-                    if (AT0 == AT1)
-                    {
-                        cAT[1] = false;
-                        Console.WriteLine("you used it");
-                    }
-                    else { cAT[1] = true; }
+                    
                 }
                 //set AT2 done
                 Console.WriteLine("|=============================================");
@@ -220,43 +245,68 @@ namespace ConsoleApp1
                     if (inAT[2] == 'a' || inAT[2] == 'A')
                     {
                         AT2 = 0;
-                        cAT[2] = true;
+                        if (AT0 == AT2 || AT1 == AT2)
+                        {
+                            cAT[2] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[2] = true; }
                     }
                     else if (inAT[2] == 'b' || inAT[2] == 'B')
                     {
                         AT2 = 1;
-                        cAT[2] = true;
+                        if (AT0 == AT2 || AT1 == AT2)
+                        {
+                            cAT[2] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[2] = true; }
                     }
                     else if (inAT[2] == 'c' || inAT[2] == 'C')
                     {
                         AT2 = 2;
-                        cAT[2] = true;
+                        if (AT0 == AT2 || AT1 == AT2)
+                        {
+                            cAT[2] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[2] = true; }
                     }
                     else if (inAT[2] == 'd' || inAT[2] == 'D')
                     {
                         AT2 = 3;
-                        cAT[2] = true;
+                        if (AT0 == AT2 || AT1 == AT2)
+                        {
+                            cAT[2] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[2] = true; }
                     }
                     else if (inAT[2] == 'e' || inAT[2] == 'E')
                     {
                         AT2 = 4;
-                        cAT[2] = true;
+                        if (AT0 == AT2 || AT1 == AT2)
+                        {
+                            cAT[2] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[2] = true; }
                     }
                     else if (inAT[2] == 'f' || inAT[2] == 'F')
                     {
                         AT2 = 5;
-                        cAT[2] = true;
+                        if (AT0 == AT2 || AT1 == AT2)
+                        {
+                            cAT[2] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[2] = true; }
                     }
                     else
                     {
                         Console.WriteLine("your in put are wrot");
                     }
-                    if (AT0 == AT2 || AT1 == AT2)
-                    {
-                        cAT[2] = false;
-                        Console.WriteLine("you used it");
-                    }
-                    else { cAT[2] = true; }
+                    
                 }
                 //set AT3 done
                 Console.WriteLine("|=============================================");
@@ -268,43 +318,68 @@ namespace ConsoleApp1
                     if (inAT[3] == 'a' || inAT[3] == 'A')
                     {
                         AT3 = 0;
-                        cAT[3] = true;
+                        if (AT0 == AT3 || AT1 == AT3 || AT3 == AT2)
+                        {
+                            cAT[3] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[3] = true; }
                     }
                     else if (inAT[3] == 'b' || inAT[3] == 'B')
                     {
                         AT3 = 1;
-                        cAT[3] = true;
+                        if (AT0 == AT3 || AT1 == AT3 || AT3 == AT2)
+                        {
+                            cAT[3] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[3] = true; }
                     }
                     else if (inAT[3] == 'c' || inAT[3] == 'C')
                     {
                         AT3 = 2;
-                        cAT[3] = true;
+                        if (AT0 == AT3 || AT1 == AT3 || AT3 == AT2)
+                        {
+                            cAT[3] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[3] = true; }
                     }
                     else if (inAT[3] == 'd' || inAT[3] == 'D')
                     {
                         AT3 = 3;
-                        cAT[3] = true;
+                        if (AT0 == AT3 || AT1 == AT3 || AT3 == AT2)
+                        {
+                            cAT[3] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[3] = true; }
                     }
                     else if (inAT[3] == 'e' || inAT[3] == 'E')
                     {
                         AT3 = 4;
-                        cAT[3] = true;
+                        if (AT0 == AT3 || AT1 == AT3 || AT3 == AT2)
+                        {
+                            cAT[3] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[3] = true; }
                     }
                     else if (inAT[3] == 'f' || inAT[3] == 'F')
                     {
                         AT3 = 5;
-                        cAT[3] = true;
+                        if (AT0 == AT3 || AT1 == AT3 || AT3 == AT2)
+                        {
+                            cAT[3] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[3] = true; }
                     }
                     else
                     {
                         Console.WriteLine("your in put are wrot");
                     }
-                    if (AT0 == AT3 || AT1 == AT3 || AT3 == AT2)
-                    {
-                        cAT[3] = false;
-                        Console.WriteLine("you used it");
-                    }
-                    else { cAT[3] = true; }
+                    
                 }
                 //set AT4 done
                 Console.WriteLine("|=============================================");
@@ -316,32 +391,62 @@ namespace ConsoleApp1
                     if (inAT[4] == 'a' || inAT[4] == 'A')
                     {
                         AT4 = 0;
-                        cAT[4] = true;
+                        if (AT0 == AT4 || AT1 == AT4 || AT4 == AT2 || AT4 == AT3)
+                        {
+                            cAT[4] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[4] = true; }
                     }
                     else if (inAT[4] == 'b' || inAT[4] == 'B')
                     {
                         AT4 = 1;
-                        cAT[4] = true;
+                        if (AT0 == AT4 || AT1 == AT4 || AT4 == AT2 || AT4 == AT3)
+                        {
+                            cAT[4] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[4] = true; }
                     }
                     else if (inAT[4] == 'c' || inAT[4] == 'C')
                     {
                         AT4 = 2;
-                        cAT[4] = true;
+                        if (AT0 == AT4 || AT1 == AT4 || AT4 == AT2 || AT4 == AT3)
+                        {
+                            cAT[4] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[4] = true; }
                     }
                     else if (inAT[4] == 'd' || inAT[4] == 'D')
                     {
                         AT4 = 3;
-                        cAT[4] = true;
+                        if (AT0 == AT4 || AT1 == AT4 || AT4 == AT2 || AT4 == AT3)
+                        {
+                            cAT[4] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[4] = true; }
                     }
                     else if (inAT[4] == 'e' || inAT[4] == 'E')
                     {
                         AT4 = 4;
-                        cAT[4] = true;
+                        if (AT0 == AT4 || AT1 == AT4 || AT4 == AT2 || AT4 == AT3)
+                        {
+                            cAT[4] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[4] = true; }
                     }
                     else if (inAT[4] == 'f' || inAT[4] == 'F')
                     {
                         AT4 = 5;
-                        cAT[4] = true;
+                        if (AT0 == AT4 || AT1 == AT4 || AT4 == AT2 || AT4 == AT3)
+                        {
+                            cAT[4] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[4] = true; }
                     }
                     else
                     {
@@ -364,43 +469,68 @@ namespace ConsoleApp1
                     if (inAT[5] == 'a' || inAT[5] == 'A')
                     {
                         AT5 = 0;
-                        cAT[5] = true;
+                        if (AT0 == AT5 || AT1 == AT5 || AT2 == AT5 || AT3 == AT5 || AT4 == AT5)
+                        {
+                            cAT[5] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[5] = true; }
                     }
                     else if (inAT[5] == 'b' || inAT[5] == 'B')
                     {
                         AT5 = 1;
-                        cAT[5] = true;
+                        if (AT0 == AT5 || AT1 == AT5 || AT2 == AT5 || AT3 == AT5 || AT4 == AT5)
+                        {
+                            cAT[5] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[5] = true; }
                     }
                     else if (inAT[5] == 'c' || inAT[5] == 'C')
                     {
                         AT5 = 2;
-                        cAT[5] = true;
+                        if (AT0 == AT5 || AT1 == AT5 || AT2 == AT5 || AT3 == AT5 || AT4 == AT5)
+                        {
+                            cAT[5] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[5] = true; }
                     }
                     else if (inAT[5] == 'd' || inAT[5] == 'D')
                     {
                         AT5 = 3;
-                        cAT[5] = true;
+                        if (AT0 == AT5 || AT1 == AT5 || AT2 == AT5 || AT3 == AT5 || AT4 == AT5)
+                        {
+                            cAT[5] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[5] = true; }
                     }
                     else if (inAT[5] == 'e' || inAT[5] == 'E')
                     {
                         AT5 = 4;
-                        cAT[5] = true;
+                        if (AT0 == AT5 || AT1 == AT5 || AT2 == AT5 || AT3 == AT5 || AT4 == AT5)
+                        {
+                            cAT[5] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[5] = true; }
                     }
                     else if (inAT[5] == 'f' || inAT[5] == 'F')
                     {
                         AT5 = 5;
-                        cAT[5] = true;
+                        if (AT0 == AT5 || AT1 == AT5 || AT2 == AT5 || AT3 == AT5 || AT4 == AT5)
+                        {
+                            cAT[5] = false;
+                            Console.WriteLine("you used it");
+                        }
+                        else { cAT[5] = true; };
                     }
                     else
                     {
                         Console.WriteLine("your in put are wrot");
                     }
-                    if (AT0 == AT5 || AT1 == AT5 || AT2 == AT5 || AT3 == AT5 || AT4 == AT5)
-                    {
-                        cAT[2] = false;
-                        Console.WriteLine("you used it");
-                    }
-                    else { cAT[2] = true; }
+                    
                 }
 
 
@@ -459,7 +589,7 @@ namespace ConsoleApp1
                     PlanetA.Showcard();
                 }
                 //loop game
-                Console.WriteLine("\nDo you want to play again [Y]Yes ro [N]No");
+                Console.Write("\nDo you want to play again [Y]Yes ro [N]No : ");
                 bool YN = false;
                 while (YN !=true)
                 {
