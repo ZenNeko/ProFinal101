@@ -88,7 +88,7 @@ namespace ConsoleApp1
                 Planetclass PlanetA = new Planetclass("Planet-06", CardPlanet);
 
                 
-                while (CardPlay != Carda && CardPlay != Cardb)
+                while (CardPlay != Carda && CardPlay != Cardb && CardPlay != Cardc)
                 {
                     Console.Write("| Choose Your ship ► ");
                     char.TryParse(Console.ReadLine(), out inAT[0]);
